@@ -1,6 +1,5 @@
 package org.geeksword.springboot.mongo.router;
 
-import com.google.common.collect.Maps;
 import com.mongodb.MongoClient;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
