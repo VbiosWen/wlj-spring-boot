@@ -1,6 +1,7 @@
 package org.geeksword.springboot.util.configuration;
 
 import lombok.Setter;
+import org.geeksword.springboot.util.lru.LinkedHashMapLRUCache;
 import org.geeksword.springboot.util.registar.DateTimeEditorRegistrar;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -21,5 +22,11 @@ public class UtilConfiguration {
     @Bean
     public DateTimeEditorRegistrar dateTimeEditorRegistrar(){
         return new DateTimeEditorRegistrar(format);
+    }
+
+
+    @Bean("testLRUCache")
+    public LinkedHashMapLRUCache<String,Object> linkedHashMapLRUCache(){
+        return new LinkedHashMapLRUCache<>(1024);
     }
 }
