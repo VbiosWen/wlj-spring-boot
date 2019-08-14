@@ -6,6 +6,8 @@ package org.geeksword.springboot.util.exceptions;
 public class BusinessException extends RuntimeException {
 
 
+    private static final long serialVersionUID = -1162464335005500665L;
+
     public BusinessException() {
     }
 

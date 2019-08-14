@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "spring.text.to.date",
+      "type": "org.geeksword.springboot.util.configuration.UtilConfiguration",
+      "sourceType": "org.geeksword.springboot.util.configuration.UtilConfiguration"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

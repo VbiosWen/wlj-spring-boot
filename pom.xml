@@ -14,6 +14,7 @@
         <module>wlj-spring-boot-mongo</module>
         <module>wlj-spring-boot-util</module>
         <module>wlj-spring-boot-redis</module>
+        <module>wlj-spring-boot-dubbo</module>
     </modules>
 
     <parent>

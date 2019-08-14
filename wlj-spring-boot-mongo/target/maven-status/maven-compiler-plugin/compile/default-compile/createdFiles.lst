@@ -1,0 +1,5 @@
+org\geeksword\springboot\mongo\MongoApplication.class
+org\geeksword\springboot\mongo\router\MongoClientPool.class
+org\geeksword\springboot\mongo\router\MongoClientFactory.class
+META-INF\spring-configuration-metadata.json
+org\geeksword\springboot\mongo\router\MongoConfig.class

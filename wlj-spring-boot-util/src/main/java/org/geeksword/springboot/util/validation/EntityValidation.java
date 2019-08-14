@@ -1,5 +1,6 @@
 package org.geeksword.springboot.util.validation;
 
+import lombok.NonNull;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
@@ -16,7 +17,7 @@ public class EntityValidation implements Validator{
     }
 
     @Override
-    public void validate(Object target, Errors errors) {
+    public void validate(@NonNull Object target, Errors errors) {
         ValidationUtils.rejectIfEmpty(errors,"firstName","first name is empty");
     }
 }

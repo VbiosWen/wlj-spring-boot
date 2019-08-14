@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "org.geeksword.mongo",
+      "type": "org.geeksword.springboot.mongo.router.MongoConfig",
+      "sourceType": "org.geeksword.springboot.mongo.router.MongoConfig"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
