@@ -26,6 +26,7 @@ public class MongoClientPool implements InitializingBean, DisposableBean {
 
     @Override
     public void destroy() throws Exception {
-
+        MONGO_CLIENT_POOL.forEach((key, client) -> client.close());
+        MONGO_CLIENT_POOL.clear();
     }
 }

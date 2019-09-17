@@ -22,7 +22,7 @@ public class RedisString implements Serializable {
 
     public void setLen(int len) {
         this.len = len;
-    }
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 
     public int getFree() {
         return free;

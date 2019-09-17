@@ -9,5 +9,7 @@ public class ZookeeperTest extends TestBase {
     @Test
     public void hello(){
         System.out.println("Hello Test!");
+        StringBuilder stringBuilder = new StringBuilder();
+        StringBuffer stringBuffer = new StringBuffer();
     }
 }

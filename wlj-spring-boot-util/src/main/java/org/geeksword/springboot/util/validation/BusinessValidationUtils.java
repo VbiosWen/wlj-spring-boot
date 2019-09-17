@@ -20,6 +20,7 @@ public class BusinessValidationUtils {
         }
     }
 
+
     public static void isNull(Object object, String msg) {
         if (Objects.isNull(object)) {
             throw new BusinessException(msg);
