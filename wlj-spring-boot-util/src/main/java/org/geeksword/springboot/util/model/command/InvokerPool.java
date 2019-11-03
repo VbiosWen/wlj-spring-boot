@@ -1,4 +1,4 @@
-package org.geeksword.springboot.util.model;
+package org.geeksword.springboot.util.model.command;
 
 import org.geeksword.springboot.util.pool.ThreadPoolUtil;
 
@@ -32,19 +32,10 @@ public class InvokerPool {
         for (int i = 0; i < 100; i++) {
             asyncExecute(new ConcreteInvoker(new ConcreteCommand(() -> System.out.println("Hello World."))));
         }
+        if (POOL_EXECUTOR.getActiveCount() <= 0) {
+            POOL_EXECUTOR.shutdown();
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

@@ -1,4 +1,4 @@
-package org.geeksword.springboot.util.model;
+package org.geeksword.springboot.util.model.command;
 
 public class ConcreteCommand implements Command {
 
