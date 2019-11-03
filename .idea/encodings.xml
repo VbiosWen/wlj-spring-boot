@@ -4,8 +4,10 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlj-spring-boot-aop" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlj-spring-boot-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wlj-spring-boot-leetcode" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlj-spring-boot-mongo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlj-spring-boot-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wlj-spring-boot-spider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlj-spring-boot-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlj-spring-boot-zookeeper" charset="UTF-8" />
   </component>
