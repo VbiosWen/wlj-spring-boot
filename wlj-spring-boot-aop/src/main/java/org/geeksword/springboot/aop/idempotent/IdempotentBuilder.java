@@ -45,6 +45,7 @@ public class IdempotentBuilder {
 
         try {
             object = proceedingJoinPoint.proceed();
+            return object;
         } finally {
            //TODO 释放锁
         }
