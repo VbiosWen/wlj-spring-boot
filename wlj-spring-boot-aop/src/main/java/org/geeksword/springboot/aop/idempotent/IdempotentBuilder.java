@@ -11,7 +11,6 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.concurrent.TimeUnit;
 
 @Aspect
 @Component
@@ -24,7 +23,7 @@ public class IdempotentBuilder {
     }
 
 
-    @Around("pointCut(idempotentApi)")
+    @Around(value = "pointCut(idempotentApi)", argNames = "proceedingJoinPoint,idempotentApi")
     public Object around(ProceedingJoinPoint proceedingJoinPoint, IdempotentApi idempotentApi) throws Throwable {
 
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
