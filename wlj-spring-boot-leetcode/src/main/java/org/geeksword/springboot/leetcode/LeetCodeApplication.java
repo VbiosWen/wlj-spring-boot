@@ -7,7 +7,7 @@ import org.apache.commons.collections.map.MultiKeyMap;
  */
 public class LeetCodeApplication {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         MultiKeyMap multiKeyMap = new MultiKeyMap();
     }
 }

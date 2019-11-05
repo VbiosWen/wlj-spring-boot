@@ -16,27 +16,27 @@ public class BusinessValidationUtils {
 
     public static void isBlank(String str, String msg) {
         if (StringUtils.isBlank(str)) {
-            throw new BusinessException(msg);
+            throw new BusinessException(-1, msg);
         }
     }
 
 
     public static void isNull(Object object, String msg) {
         if (Objects.isNull(object)) {
-            throw new BusinessException(msg);
+            throw new BusinessException(-1, msg);
         }
     }
 
     public static void isTrue(boolean tag, String msg) {
         if (tag) {
-            throw new BusinessException(msg);
+            throw new BusinessException(-1, msg);
         }
     }
 
     public static void rejectIfNull(@NonNull String fieldName, @NonNull Object object, String msg) {
         Object obj = getField(fieldName, object);
         if (Objects.isNull(obj)) {
-            throw new BusinessException(msg);
+            throw new BusinessException(-1, msg);
         }
     }
 
@@ -50,7 +50,7 @@ public class BusinessValidationUtils {
         Object obj = getField(fieldName, object);
         Assert.notNull(obj, String.format("get value from %s is null", fieldName));
         if (!(obj instanceof String)) {
-            throw new BusinessException(String.format("the %s type must be string.", fieldName));
+            throw new BusinessException(-1, String.format("the %s type must be string.", fieldName));
         }
         isBlank((String) obj, msg);
     }

@@ -1,11 +1,7 @@
 package org.geeksword.springboot.util.pool;
 
 import java.lang.Thread.UncaughtExceptionHandler;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.RejectedExecutionHandler;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 
@@ -20,14 +16,10 @@ public class ThreadPoolUtil {
     private static final int DEFAULT_INIT_THREAD_SIZE = 5;
 
     private static final int DEFAULT_MAX_THREAD_SIZE = 10;
-
-    private final ThreadPoolExecutor executor;
-
     private static final TimeUnit DEFAULT_UNIT = TimeUnit.SECONDS;
-
     private static final long DEFAULT_KEEP_ALIVE_TIME = 0L;
-
     private static final String DEFAULT_THREAD_POOL_NAME = "DEFAULT-THREAD-POOL-";
+    private final ThreadPoolExecutor executor;
 
     private ThreadPoolUtil() {
         LinkedBlockingQueue<Runnable> queue = new LinkedBlockingQueue<>(

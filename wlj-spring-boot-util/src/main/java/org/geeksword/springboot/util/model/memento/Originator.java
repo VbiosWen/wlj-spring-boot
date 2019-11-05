@@ -4,11 +4,11 @@ public class Originator {
 
     private String state;
 
-    public Memento createNewMemento(){
+    public Memento createNewMemento() {
         return new Memento(this);
     }
 
-    public void restoreMemento(Memento memento){
+    public void restoreMemento(Memento memento) {
         state = memento.getState();
     }
 

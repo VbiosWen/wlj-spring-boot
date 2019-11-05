@@ -25,6 +25,10 @@
         <version>2.1.6.RELEASE</version>
     </parent>
 
+    <properties>
+        <commons-lang.version>2.6</commons-lang.version>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -40,6 +44,12 @@
                 <version>2.1.6.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${commons-lang.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

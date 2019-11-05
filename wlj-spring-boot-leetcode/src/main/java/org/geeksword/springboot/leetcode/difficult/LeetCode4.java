@@ -9,13 +9,13 @@ public class LeetCode4 {
         return 0;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Integer test = (Integer) getResult(Boolean.TRUE);
         System.out.println(test);
     }
 
-    static Object getResult(Boolean ab){
-        if(ab){
+    static Object getResult(Boolean ab) {
+        if (ab) {
             return null;
         }
         return 1;

@@ -1,17 +1,22 @@
 package org.geeksword.springboot.util.exceptions;
 
+import lombok.Data;
+
 /**
  * @wenliujie
  */
+@Data
+
 public class BusinessException extends RuntimeException {
 
 
     private static final long serialVersionUID = -1162464335005500665L;
 
-    public BusinessException() {
-    }
+    private final int code;
 
-    public BusinessException(String message) {
+
+    public BusinessException(final int code, final String message) {
         super(message);
+        this.code = code;
     }
 }

@@ -5,7 +5,7 @@ package org.geeksword.springboot.leetcode.model.command;
  */
 public class Receiver {
 
-    void action(){
+    void action() {
 
     }
 }
