@@ -85,7 +85,7 @@ public class ThreadPoolUtil {
         }
     }
 
-    private class ThreadExceptionHandler implements UncaughtExceptionHandler {
+    private static class ThreadExceptionHandler implements UncaughtExceptionHandler {
 
         @Override
         public void uncaughtException(Thread t, Throwable e) {

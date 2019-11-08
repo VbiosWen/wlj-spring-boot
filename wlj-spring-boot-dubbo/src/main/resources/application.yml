@@ -5,3 +5,5 @@ spring:
     registry: zookeeper://127.0.0.1:2181
 server:
   port: 8090
+
+

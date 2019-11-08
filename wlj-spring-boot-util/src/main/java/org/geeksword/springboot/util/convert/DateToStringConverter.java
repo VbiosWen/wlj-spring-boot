@@ -18,15 +18,7 @@ public class DateToStringConverter implements Converter<LocalDateTime,String> {
 
     private DateTimeFormatter dateTimeFormatter;
 
-    private String DATE_PATTERN = DEFAULT_FORMATTER_PATTERN;
-
-    public String getDATE_PATTERN() {
-        return DATE_PATTERN;
-    }
-
-    public void setDATE_PATTERN(String DATE_PATTERN) {
-        this.DATE_PATTERN = DATE_PATTERN;
-    }
+    private static final String DATE_PATTERN = DEFAULT_FORMATTER_PATTERN;
 
     @PostConstruct
     public void init(){

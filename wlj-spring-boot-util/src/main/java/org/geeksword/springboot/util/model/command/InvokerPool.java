@@ -2,6 +2,7 @@ package org.geeksword.springboot.util.model.command;
 
 import org.geeksword.springboot.util.pool.ThreadPoolUtil;
 
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
@@ -14,6 +15,8 @@ public class InvokerPool {
     }
 
     public static void main(String[] args) {
+
+        CountDownLatch countDownLatch = new CountDownLatch(100);
         for (int i = 0; i < 100; i++) {
             asyncExecute(new ConcreteInvoker(new ConcreteCommand(() -> System.out.println("Hello World."))));
         }
