@@ -1,5 +1,8 @@
 package org.geeksword.springboot.util.model.command;
 
+/**
+ * 命令
+ */
 public class ConcreteCommand implements Command {
 
     private final Receiver receiver;
