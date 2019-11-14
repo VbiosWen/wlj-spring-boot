@@ -13,6 +13,7 @@
         <module name="wlj-spring-boot-util" />
         <module name="wlj-spring-boot-aop" />
         <module name="wlj-spring-boot-redis" />
+        <module name="wlj-spring-boot-mybatis" />
         <module name="wlj-spring-boot-spider" />
         <module name="wlj-spring-boot-dubbo" />
         <module name="wlj-spring-boot-mongo" />
@@ -27,6 +28,7 @@
       <module name="wlj-spring-boot-dubbo" options="-parameters" />
       <module name="wlj-spring-boot-leetcode" options="-parameters" />
       <module name="wlj-spring-boot-mongo" options="-parameters" />
+      <module name="wlj-spring-boot-mybatis" options="-parameters" />
       <module name="wlj-spring-boot-redis" options="-parameters" />
       <module name="wlj-spring-boot-spider" options="-parameters" />
       <module name="wlj-spring-boot-util" options="-parameters" />
