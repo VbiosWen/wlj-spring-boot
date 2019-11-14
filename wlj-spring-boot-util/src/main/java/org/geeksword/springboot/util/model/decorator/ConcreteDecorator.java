@@ -17,6 +17,12 @@ public class ConcreteDecorator extends Decorator {
     }
 
     private void addedBehavior() {
-        // TODO do some thing that you love.
+        System.out.println("Today is the end of the world");
+    }
+
+    public static void main(String[] args){
+        Component component = new ConcreteComponent();
+        Decorator decorator = new ConcreteDecorator(component);
+        decorator.operation();
     }
 }

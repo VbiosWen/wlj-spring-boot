@@ -13,6 +13,6 @@ public abstract class Decorator implements Component {
 
     @Override
     public void operation() {
-        // TODO do same things;
+       component.operation();
     }
 }
