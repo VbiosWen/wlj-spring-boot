@@ -1,21 +1,18 @@
 package org.geeksword.springboot.util.serialization;
 
-import lombok.extern.slf4j.Slf4j;
-
 import java.io.*;
 import java.util.Objects;
 
-@Slf4j
-public class SerializationUtils {
+public class JdkSerializer implements Serializer {
 
-
-    public static byte[] encode(Serializable serializable) throws IOException {
+    @Override
+    public byte[] encode(Serializable obj) throws IOException {
         ObjectOutputStream objectOutputStream = null;
         ByteArrayOutputStream byteArrayOutputStream = null;
         try {
             byteArrayOutputStream = new ByteArrayOutputStream();
             objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
-            objectOutputStream.writeObject(serializable);
+            objectOutputStream.writeObject(obj);
             return byteArrayOutputStream.toByteArray();
         } finally {
             if (Objects.nonNull(byteArrayOutputStream)) {
@@ -27,8 +24,10 @@ public class SerializationUtils {
         }
     }
 
+    @Override
     @SuppressWarnings("unchecked")
-    public static <T> T decode(byte[] bytes) throws IOException, ClassNotFoundException {
+    public <T extends Serializable> T decode(byte[] bytes, Class<? extends Serializable> tClass) throws IOException,
+            ClassNotFoundException {
         ObjectInputStream objectInputStream = null;
         ByteArrayInputStream byteArrayInputStream = null;
         try {
@@ -45,4 +44,6 @@ public class SerializationUtils {
             }
         }
     }
+
+
 }
