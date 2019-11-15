@@ -10,13 +10,14 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>wlj-spring-boot-zookeeper</module>
-        <module>wlj-spring-boot-aop</module>
+        <module>wlj-springboot-aop</module>
         <module>wlj-spring-boot-mongo</module>
         <module>wlj-spring-boot-util</module>
         <module>wlj-spring-boot-redis</module>
-        <module>wlj-spring-boot-dubbo</module>
+        <module>wlj-springboot-dubbo</module>
         <module>wlj-spring-boot-spider</module>
         <module>wlj-spring-boot-leetcode</module>
+        <module>wlj-springboot-elasticsearch</module>
     </modules>
 
     <parent>
@@ -62,15 +63,6 @@
         </dependency>
     </dependencies>
 
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 
 

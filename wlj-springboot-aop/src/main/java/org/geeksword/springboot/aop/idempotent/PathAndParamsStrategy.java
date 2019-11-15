@@ -1,6 +1,5 @@
 package org.geeksword.springboot.aop.idempotent;
 
-import org.geeksword.springboot.util.encipher.MD5Util;
 import org.geeksword.springboot.util.json.JackSonUtil;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,6 +19,6 @@ public class PathAndParamsStrategy implements IdempotentStrategy {
 
         String parameters = JackSonUtil.toJson(parameterMap);
 
-        return MD5Util.md5(token + servletPath + parameters);
+        return null;
     }
 }
