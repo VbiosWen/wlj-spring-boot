@@ -18,6 +18,7 @@
         <module>wlj-spring-boot-spider</module>
         <module>wlj-spring-boot-leetcode</module>
         <module>wlj-springboot-elasticsearch</module>
+        <module>wlj-springboot-http</module>
     </modules>
 
     <parent>
