@@ -18,10 +18,10 @@ public class ItemDAO {
     public Boolean createIndex() {
         return elasticsearchTemplate.createIndex(ItemDO.class);
     }
-
-    public List<ItemDO> query() {
-        elasticsearchTemplate.query()
-    }
+//
+//    public List<ItemDO> query() {
+//        elasticsearchTemplate.query();
+//    }
 
 
 }

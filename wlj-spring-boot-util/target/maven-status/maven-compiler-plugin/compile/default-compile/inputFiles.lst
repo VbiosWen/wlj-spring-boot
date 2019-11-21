@@ -5,6 +5,7 @@ C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\lru\LinkedHashMapLRUCache.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\configuration\UtilConfiguration.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\decorator\Component.java
+C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\future\FutureTask.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\serialization\Serializer.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\observer\ConcreteSubject.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\decorator\Decorator.java
@@ -25,8 +26,12 @@ C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\command\Command.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\pool\ThreadPoolUtil.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\serialization\FastJsonSerializer.java
+C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\future\FutureServiceImpl.java
+C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\future\Task.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\serialization\JdkSerializer.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\json\JackSonUtil.java
+C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\future\Future.java
+C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\future\FutureService.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\strategy\ConcreteStrategy.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\convert\DateToStringConverter.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\encipher\MD5Util.java
@@ -34,3 +39,4 @@ C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\command\ConcreteCommand.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\memento\Memento.java
 C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\strategy\Context.java
+C:\Users\ppp\IdeaProjects\wlj-spring-boot\wlj-spring-boot-util\src\main\java\org\geeksword\springboot\util\model\future\CallBack.java
