@@ -73,7 +73,7 @@ public class ObserverThread<T> extends Thread implements ThreadObserver {
     }
 
     @Override
-    public void start() {
+    public synchronized void start() {
         super.start();
     }
 
