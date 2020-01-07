@@ -6,10 +6,11 @@
   3. 线程存活时间 线程存活时间不宜过长也不宜过短,过短会导致任务队列满的情况下,频繁的创建线程,销毁线程.这样就有可能导致线程数耗尽的情况.
   4. 线程工厂类 ThreadFactory 主要是做线程的创建操作,可以在创建线程时设置线程名,是否是后台线程,和线程处理失败异常的捕获handler.
   5. 任务阻塞队列 当执行submit方法或者execute方法时,会先将任务保存到阻塞队列中,如果这个时候任务队列放满了,首先是线程数会从核心线程数向最大线程数增加,如果线程数已经达到最大线程数,那么就会执行拒绝策略.
-  6. 拒绝策略 ThreadPool 提供了AbortPolicy,CallerRunsPolicy,DiscardOldestPolicy三种拒绝策略.
+  6. 拒绝策略 ThreadPool 提供了AbortPolicy,DiscardPolicy,CallerRunsPolicy,DiscardOldestPolicy三种拒绝策略.
      1. AbortPolicy 线程池直接抛出异常,当前任务丢弃.
      2. CallerRunsPolicy 当前任务在主线程进行运行.
-     3. 丢弃老的任务,将新的任务放入队列.
+     3. DiscardOldestPolicy 丢弃老的任务,将新的任务放入队列.
+     4. DiscardPolicy 直接丢弃任务
   7. Addahl定律:
      F: 系统串行化比例.
      N: CPU数目.
