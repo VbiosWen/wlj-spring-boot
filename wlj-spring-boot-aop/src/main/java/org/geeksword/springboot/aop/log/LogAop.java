@@ -24,7 +24,7 @@ public class LogAop {
     public void pointCut() {
     }
 
-    @Around(value = "pointCut()")
+    @Around(value = "pointCut()",argNames = "proceedingJoinPoint")
     public Object around(ProceedingJoinPoint proceedingJoinPoint) {
         long start = Instant.now().toEpochMilli();
         MethodSignature signature = (MethodSignature) proceedingJoinPoint.getSignature();
@@ -34,8 +34,6 @@ public class LogAop {
         try {
             result = proceedingJoinPoint.proceed();
         } catch (Throwable throwable) {
-            throwable.printStackTrace();
-            //TODO log error info
             log.error("api use error :", throwable);
             throw new RuntimeException(throwable);
         } finally {

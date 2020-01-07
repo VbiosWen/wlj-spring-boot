@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.type.SimpleType;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 import com.fasterxml.jackson.databind.util.Converter;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
@@ -12,6 +13,7 @@ import java.time.format.DateTimeFormatter;
 /**
  * @wenliujie
  */
+@Component
 public class DateToStringConverter implements Converter<LocalDateTime,String> {
 
     private static final String DEFAULT_FORMATTER_PATTERN =  "yyyy-MM-dd HH:mm:ss";

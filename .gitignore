@@ -23,3 +23,23 @@ target/
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+wlj-spring-boot-aop/src/main/resources/
+wlj-spring-boot-aop/src/test/
+wlj-spring-boot-dubbo/src/test/
+wlj-spring-boot-elasticsearch/src/test/
+wlj-spring-boot-http/src/main/resources/
+wlj-spring-boot-http/src/test/
+wlj-spring-boot-kafka/src/main/resources/
+wlj-spring-boot-kafka/src/test/
+wlj-spring-boot-leetcode/src/main/resources/
+wlj-spring-boot-leetcode/src/test/
+wlj-spring-boot-mongo/src/main/resources/
+wlj-spring-boot-mongo/src/test/
+wlj-spring-boot-redis/src/main/resources/
+wlj-spring-boot-redis/src/test/
+wlj-spring-boot-rocket-MQ/src/main/resources/
+wlj-spring-boot-rocket-MQ/src/test/
+wlj-spring-boot-spider/src/main/resources/
+wlj-spring-boot-spider/src/test/
+wlj-spring-boot-util/src/main/resources/
+wlj-spring-boot-util/src/test/

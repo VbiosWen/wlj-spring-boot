@@ -20,6 +20,7 @@
         <module>wlj-spring-boot-elasticsearch</module>
         <module>wlj-spring-boot-http</module>
         <module>wlj-spring-boot-rocket-MQ</module>
+        <module>wlj-spring-boot-kafka</module>
     </modules>
 
     <parent>
