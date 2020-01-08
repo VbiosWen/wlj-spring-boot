@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class ThreadPoolUtil {
 
-    private static final int DEFAULT_INIT_THREAD_SIZE = 5;
+    private static final int DEFAULT_INIT_THREAD_SIZE = Runtime.getRuntime().availableProcessors() + 1 ;
 
     private static final int DEFAULT_MAX_THREAD_SIZE = 10;
     private static final TimeUnit DEFAULT_UNIT = TimeUnit.SECONDS;
