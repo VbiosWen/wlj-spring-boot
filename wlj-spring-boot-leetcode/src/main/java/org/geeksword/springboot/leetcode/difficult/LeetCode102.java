@@ -11,11 +11,13 @@ public class LeetCode102 {
 
     }
 
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    public List<List<Integer>> Print(TreeNode root) {
         List<List<Integer>> lists = new ArrayList<>();
         if (root == null) {
             return lists;
         }
+
+
 
         judge(root, lists, 0);
         return lists;
