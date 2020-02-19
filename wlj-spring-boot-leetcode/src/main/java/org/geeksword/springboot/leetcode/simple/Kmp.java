@@ -8,7 +8,8 @@ public class Kmp {
 
     public static void main(String[] args) {
         String parentStr = "abcdabd", childStr = "cda";
-        getStringIndex(parentStr, childStr);
+        int stringIndex = getStringIndex(parentStr, childStr);
+        System.out.println(stringIndex);
     }
 
     private static int getStringIndex(String parentStr, String childStr) {
