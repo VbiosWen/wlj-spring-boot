@@ -10,6 +10,7 @@ public class JackSonUtil {
 
     public static String toJson(Object object) {
         try {
+
             return objectMapper.writeValueAsString(object);
         } catch (JsonProcessingException e) {
             return null;
