@@ -26,7 +26,7 @@ public class Money {
     }
 
     public static Money ofYuan(double yuan) {
-        return new Money(BigDecimal.valueOf(yuan), BigDecimal.valueOf(yuan).multiply(ltis));
+        return new Money(BigDecimal.valueOf(yuan), BigDecimal.valueOf(yuan).setScale(2,RoundingMode.HALF_UP).multiply(ltis));
     }
 
     public static Money ofFen(long fen) {

@@ -2,19 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="wlj-spring-boot-mybatis" />
         <module name="wlj-springboot-dubbo" />
-        <module name="wlj-spingboot-elasticsearch" />
         <module name="wlj-spring-boot-rocketMQ" />
         <module name="wlj-springboot-aop" />
         <module name="wlj-spring-boot-leetcode" />
         <module name="wlj-spring-boot-util" />
         <module name="wlj-spring-boot-zookeeper" />
         <module name="wlj-spring-boot-redis" />
-        <module name="wlj-spring-boot-mybatis" />
+        <module name="wlj-spingboot-elasticsearch" />
         <module name="wlj-spring-boot-spider" />
         <module name="wlj-springboot-http" />
         <module name="wlj-spring-boot-mongo" />
