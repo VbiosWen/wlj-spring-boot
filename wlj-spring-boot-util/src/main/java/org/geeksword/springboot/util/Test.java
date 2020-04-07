@@ -8,11 +8,8 @@ public class Test {
     }
 
 
-    public static void main(String args){
-        for(int i = 0 ; i < Integer.MAX_VALUE;i++){
-            KeyValue keyValue = new KeyValue();
-            keyValue.id = i;
-            keyValue.value = String.valueOf(i);
-        }
+    public static void main(String[] args){
+       int s = ~(1 << 4);
+        System.out.println(s);
     }
 }
