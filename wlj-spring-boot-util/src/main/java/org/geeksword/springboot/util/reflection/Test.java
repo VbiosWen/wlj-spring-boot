@@ -17,4 +17,9 @@ public class Test {
         List<Integer> list1 = list.subList(10, 20);
         list1.forEach(System.out::print);
     }
+
+    public Boolean sout1(Integer aNumber,String bNumber){
+        System.out.println(aNumber + "_" + bNumber);
+        return Boolean.TRUE;
+    }
 }
