@@ -1,13 +1,12 @@
 package org.geeksword.springboot.util.reflection;
 
 import com.google.common.collect.Maps;
+import org.springframework.util.Assert;
 
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,12 +15,23 @@ import java.util.Objects;
 public class ReflectionUtils {
 
 
+    public static <T> T getInstance(Class<T> tClass){
+        Assert.notNull(tClass,"class 不能为空");
+        try {
+            return tClass.newInstance();
+        } catch (InstantiationException | IllegalAccessException e) {
+            throw new IllegalStateException("根据tCLass 创建对象失败",e);
+        }
+    }
+
+
     public static Map<Object, Object> getAllAnno(Object obj) throws IllegalAccessException {
         Map<Object, Object> annoMap = Maps.newHashMap();
         scanAllField(obj, annoMap);
         return annoMap;
     }
 
+    @SuppressWarnings("unchecked,rawtypes")
     private static void scanAllField(Object obj, Map<Object, Object> map) throws IllegalAccessException {
         if (obj == null) {
             return;
@@ -44,7 +54,6 @@ public class ReflectionUtils {
                     }
                 });
             } else if (o instanceof Number || o instanceof Boolean) {
-                continue;
             } else if (!declaredField.getType().getSuperclass().isAssignableFrom(Object.class)) {
                 scanAllField(o, map);
             }
