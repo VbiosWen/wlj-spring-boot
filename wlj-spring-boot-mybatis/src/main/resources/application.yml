@@ -2,14 +2,21 @@ spring:
   application:
     name: dynamic-mybatis-springboot-starter
 druid:
-  config:
-    master: true
-    jdbc-url: localhost:8080
-    username: root
-    password: 123456
-    max-active: 10
-    min-idle: 1
-    max-wait-thread-count: 10
-    stat-logger: true
-
-
+  config-map:
+    master:
+      url: jdbc:mysql://localhost:3306/test
+      username: root
+      password: root123
+      driver-class: com.mysql.jdbc.Driver
+      initial-size: 1
+      max-active: 8
+      min-idle: 4
+      validation-query: select 1
+    slave:
+      username: root
+      driver-class: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test
+      initial-size: 1
+      max-active: 10
+      min-idle: 5
+      validation-query: select 1

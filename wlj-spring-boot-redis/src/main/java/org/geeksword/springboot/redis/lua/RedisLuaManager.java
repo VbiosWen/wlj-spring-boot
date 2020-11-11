@@ -12,7 +12,7 @@ public class RedisLuaManager {
     private RedisTemplate redisTemplate;
 
     public void test(){
-        redisTemplate.getConnectionFactory().getConnection().eval()
+      //  redisTemplate.getConnectionFactory().getConnection().eval(null);
     }
 
 }

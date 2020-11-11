@@ -20,9 +20,6 @@ public class RedisApplication {
         redisTemplate.convertAndSend("test","test");
     }
 
-    public void main(String test,Boolean fal){
-        redisTemplate.getConnectionFactory().getConnection().subscribe();
-    }
 
     public static void main(String[] args){
         SpringApplication.run(RedisApplication.class,args);

@@ -12,10 +12,10 @@ import java.util.Set;
  * @author vbiso
  * @see
  */
-@SpringBootConfiguration
+@Data
 public class DynamicDruidDataSourceConfig {
 
-    private Map<String, DynamicDruidDataSource> druidDataSourceConfigMap;
+    private Map<String, DynamicDruidDataSource> configMap;
 
 
 
