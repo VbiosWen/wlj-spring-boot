@@ -1,7 +1,7 @@
 package org.geeksword.springboot.dubbo.service;
 
-import org.apache.dubbo.config.annotation.Service;
 import org.geeksword.springboot.dubbo.api.TestService;
+import org.springframework.stereotype.Service;
 
 /**
  * @author vbiso

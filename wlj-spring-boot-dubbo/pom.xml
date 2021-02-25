@@ -25,6 +25,7 @@
         <java-image.name>openjdk:8</java-image.name>
         <dubbo.port>20880</dubbo.port>
         <zookeeper.port>2181</zookeeper.port>
+        <dubbo.version>2.7.3</dubbo.version>
         <dubbo-spring-boot.version>2.7.3</dubbo-spring-boot.version>
     </properties>
 

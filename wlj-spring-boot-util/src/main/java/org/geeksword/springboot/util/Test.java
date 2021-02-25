@@ -9,7 +9,14 @@ public class Test {
 
 
     public static void main(String[] args){
-       int s = ~(1 << 4);
-        System.out.println(s);
+        int a = 16;
+        int b = 7;
+        System.out.println((a-1) & b);
+
+        Integer intA = new Integer(10);
+        final int i = intA.hashCode() ^ (intA.hashCode() >>> 16);
+        System.out.println(intA.hashCode() >>> 16);
     }
+
+
 }
